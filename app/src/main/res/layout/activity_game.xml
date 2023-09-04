@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".game">
+
+    <TextView
+        android:id="@+id/ty"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="186dp"
+        android:fontFamily="@font/aleo"
+        android:text="Selected Game Type: "
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sc"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="Score: "
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="361dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="272dp"
+        android:text="Question"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <!-- First Row -->
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/optionA"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1">
+
+
+            <!-- Add your content for the first CardView here -->
+            <TextView
+                android:id="@+id/opA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card 1 Text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/optionB"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1">
+
+            <!-- Add your content for the second CardView here -->
+            <TextView
+                android:id="@+id/opB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card 2 Text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Second Row -->
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/firstRow"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/optionC"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1">
+
+            <!-- Add your content for the third CardView here -->
+            <TextView
+                android:id="@+id/opC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card 3 Text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/optionD"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1">
+
+            <!-- Add your content for the fourth CardView here -->
+            <TextView
+                android:id="@+id/opD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card 4 Text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>
